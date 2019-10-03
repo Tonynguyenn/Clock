@@ -13,7 +13,9 @@
 
         <include
             android:id="@+id/time"
-            layout ="@layout/t_layout"
+            layout="@layout/t_layout"
+            android:background="#FFFFCC"
+            android:backgroundTint="#9C221E1E"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
