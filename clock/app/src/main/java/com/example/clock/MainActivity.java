@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-// get Sydney time
+// this code below is used to get the 24hr time for sydney
 
 
     private TextView sydneyT;
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     String tokyoTimeS = hourT + ":" + String.format(Locale.ENGLISH, "%02d", t.get(Calendar.MINUTE));
 
 
-// Auckland time
+// this code below is used to get the 24hr time for Auckland
 
     private TextView aucklandT;
     TimeZone auckland = TimeZone.getTimeZone("Pacific/Auckland");
@@ -34,14 +34,14 @@ public class MainActivity extends AppCompatActivity {
     final int hourU = u.get(Calendar.HOUR_OF_DAY);
     String aucklandTimeS = hourU + ":" + String.format(Locale.ENGLISH, "%02d", u.get(Calendar.MINUTE));
 
-// saigon time
+// this code below is used to get the 24hr time for Sauigon
 
     private TextView saigonT;
     TimeZone saigon = TimeZone.getTimeZone("Asia/Saigon");
     Calendar s = Calendar.getInstance(saigon);
     final int hourS = s.get(Calendar.HOUR_OF_DAY);
     String saigonTimeS = hourS + ":" + String.format(Locale.ENGLISH, "%02d", s.get(Calendar.MINUTE));
-
+    // this code below is used to get the 24hr time for Shanghai
     private TextView shanghaiT;
     TimeZone shanghai = TimeZone.getTimeZone("Asia/Shanghai");
     Calendar h = Calendar.getInstance(shanghai);
@@ -54,19 +54,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // this code is used to to set the sydney time textview
         sydneyT = findViewById(R.id.sydneyT);
         sydneyT.setText(sydneyTimeS);
 
-
+// this code is used to set the time for tokyo in the textview
         tokyoT = findViewById(R.id.tokyoT);
         tokyoT.setText(tokyoTimeS);
-
+// this code below is used to set the time for auckland in the textview
         aucklandT = findViewById(R.id.aucklandT);
         aucklandT.setText(aucklandTimeS);
-
+// this is used to set the time for saigon in the textview
         saigonT = findViewById(R.id.saigonT);
         saigonT.setText(saigonTimeS);
-
+// this is used to set the time for shanghai in the textview
         shanghaiT = findViewById(R.id.shanghaiT);
         shanghaiT.setText(shanghaiTimeS);
 
