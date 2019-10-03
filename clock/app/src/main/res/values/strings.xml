@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">clock</string>
+    <string name="sydney">SYDNEY</string>
+    <string name="tokyo">SYDNEY</string>
+    <string name="auckland">SYDNEY</string>
+    <string name="saigon">SYDNEY</string>
+    <string name="shanghai">SYDNEY</string>
+</resources>
