@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/sydney"
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:contentDescription="@string/saigon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:srcCompat="@drawable/sydney" />
+
+
+    <TextView
+        android:id="@+id/sydneyTime"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sydney" />
+
+    <ImageView
+        android:id="@+id/tokyo"
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:contentDescription="@string/tokyo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/tokyo_main"
+        app:layout_constraintTop_toBottomOf="@+id/sydneyTime" />
+
+
+    <TextView
+        android:id="@+id/tokyoTime"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tokyo"/>
+
+    <ImageView
+        android:id="@+id/auckland"
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:contentDescription="@string/tokyo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/auckland"
+        app:layout_constraintTop_toBottomOf="@+id/tokyoTime" />
+
+
+    <TextView
+        android:id="@+id/aucklandTime"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auckland"/>
+
+
+    <ImageView
+        android:id="@+id/saigon"
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:contentDescription="@string/saigon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/travel_saigon_1"
+        app:layout_constraintTop_toBottomOf="@+id/aucklandTime" />
+
+    <TextView
+        android:id="@+id/saigonTime"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saigon"/>
+
+    <ImageView
+        android:id="@+id/shanghai"
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:contentDescription="@string/shanghai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/shanghai"
+        app:layout_constraintTop_toBottomOf="@+id/saigonTime" />
+
+    <TextView
+        android:id="@+id/shanghaiTime"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shanghai"/>
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/sydney"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tokyo"
+        app:layout_constraintEnd_toStartOf="@+id/sydneyTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sydney"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewCity1"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="TOKYO"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/auckland"
+        app:layout_constraintEnd_toStartOf="@+id/tokyoTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tokyo"
+        app:layout_constraintVertical_bias="1.0" />
+    <TextView
+        android:id="@+id/textViewCity2"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="AUCKLAND"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/saigon"
+        app:layout_constraintEnd_toStartOf="@+id/aucklandTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auckland"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewCity3"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="SAIGON"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/shanghai"
+        app:layout_constraintEnd_toStartOf="@+id/saigonTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saigon"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <TextView
+        android:id="@+id/textViewCity4"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="SHANGHAI"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/shanghaiTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shanghai"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
